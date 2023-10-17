@@ -1,0 +1,64 @@
+Description:-
+First, After understanding the problem, the first thing came into my mind is topolgical sort. As in the topological sort, if there is an edge between u and v, then the linear ordering of vertices such that u should
+come before v.
+And topological sort works on DAG which means Directed acyclic graph.
+
+Now understand the problem,
+if o----->1 which means for taking 1 , o course is required to complete.
+however, 1------->0 will make a cycle.
+
+So we will iterate over every vertices, find out whether on any vertices, there should not be any cycle
+and for every course there should be atleast one prerequisite.
+
+Approach--
+I'm taking one visited boolean array and marked boolean array.
+boolean visited array is for marking it as visited
+and marked array is to note down that this vertice has been completely traversed and there is not a cycle between it.
+nd the logic is if vertices is visted but not marked that means there is not marked or its false, there is a cycle between it
+1->2->1 vertices[1]true vertices[2]true vertices[1]true marked[false] because we didn't visit
+1->2 vertices[1]true marked[1]=false marked[1] true
+vertices[2]true marked[2]=true returns back
+
+
+class Solution {
+    public boolean canFinish(int numCourses, int[][] prerequisites) {
+        
+        ArrayList<ArrayList<Integer>> arr=getArrayList(prerequisites,numCourses);
+        boolean flag=true;
+        boolean[] visited=new boolean[numCourses];
+        boolean[] marked=new boolean[numCourses];
+        for(int i=0;i<numCourses;i++){
+           if(!dfs(i,arr,visited,marked)){
+               return false;
+           }  
+        }
+        return true;
+    }
+    public boolean dfs(int i,ArrayList<ArrayList<Integer>> arr,boolean[] visited,boolean[] marked ){
+        visited[i]=true;
+        for(int j=0;j<arr.get(i).size();j++){
+            if(!visited[arr.get(i).get(j)]){
+                    if(!dfs(arr.get(i).get(j),arr,visited,marked)){
+                       return false;
+                    }
+            }
+            else if(!marked[arr.get(i).get(j)]){
+                return false;
+            }
+        }
+        marked[i]=true;
+        return true;
+    }
+    public ArrayList<ArrayList<Integer>> getArrayList(int[][] courses,int k){
+
+        ArrayList<ArrayList<Integer>> arr=new ArrayList<>();
+         for(int i=0;i<k;i++){
+             arr.add(new ArrayList<>());
+         }
+         for(int i=0;i<courses.length;i++){
+             arr.get(courses[i][1]).add(courses[i][0]);
+         }
+         return arr;
+    }
+}
+
