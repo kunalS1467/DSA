@@ -8,14 +8,14 @@ class Solution {
         return prefix;
     }
     public String findCommon(String prefix, String find){
-        String common ="";
-        for(int i=0;i<prefix.length();i++){
-           if(find.contains(prefix.substring(0,i+1))){
-                if(find.indexOf(prefix.substring(0,i+1))==0)
-                    common = prefix.substring(0,i+1);
-           }
+        int i=0;
+        for(;i<Math.min(prefix.length(),find.length());i++){
+            if(prefix.charAt(i)!=find.charAt(i)){
+                break;
+            }
         }
-        return common;
+        
+        return i>0 ? prefix.substring(0,i):"";
     }
     
 }
