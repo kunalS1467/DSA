@@ -13,10 +13,29 @@ class Pair{
     boolean second;
 }
 public class Solution {
-    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+    public TreeNode lowestCommonAncestor(TreeNode curr, TreeNode p, TreeNode q) {
         
-        Pair pq=lowestCommon(root,p,q);
-        return pq.value;
+        if(curr==null){
+            return null;
+        }
+        
+        if(curr.val==p.val || curr.val==q.val){
+            return curr;
+        }
+
+        TreeNode left = lowestCommonAncestor(curr.left, p, q);
+        TreeNode right = lowestCommonAncestor(curr.right, p, q);
+        
+        if(left==null && right==null){
+            return null;
+        }
+        if(left!=null && right==null){
+            return left;
+        }
+        if(left==null && right!=null){
+            return right;
+        }
+            return curr;
         
     }
     public Pair lowestCommon(TreeNode root, TreeNode p, TreeNode q) {
