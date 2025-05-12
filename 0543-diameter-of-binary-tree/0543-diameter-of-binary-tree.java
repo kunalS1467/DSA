@@ -13,23 +13,16 @@
  *     }
  * }
  */
-class Pair{
-    int height;
-    int diameter;
-}
 class Solution {
     public int diameterOfBinaryTree(TreeNode root) {
-        return diameter(root).diameter;
+        if(root==null)return 0;
+        int k = diameterOfBinaryTree(root.left);
+        int l =diameterOfBinaryTree(root.right);
+        int m = height(root.left)+height(root.right);
+        return Math.max(k,Math.max(l,m));
     }
-    public Pair diameter(TreeNode root) {
-        if(root==null)return new Pair();
-        Pair left=diameter(root.left);
-        Pair right=diameter(root.right);
-
-        Pair res=new Pair();
-        res.height=1+Math.max(left.height,right.height);
-        res.diameter=Math.max(left.height+right.height,Math.max(left.diameter,right.diameter));
-
-        return res;
+    public int height(TreeNode root) {
+        if(root==null)return 0;
+        return 1+ Math.max(height(root.left),height(root.right));
     }
 }
