@@ -42,4 +42,16 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0226-invert-binary-tree](https://github.com/kunalS1467/DSA/tree/master/0226-invert-binary-tree) |
+## Array
+|  |
+| ------- |
+| [3321-type-of-triangle](https://github.com/kunalS1467/DSA/tree/master/3321-type-of-triangle) |
+## Math
+|  |
+| ------- |
+| [3321-type-of-triangle](https://github.com/kunalS1467/DSA/tree/master/3321-type-of-triangle) |
+## Sorting
+|  |
+| ------- |
+| [3321-type-of-triangle](https://github.com/kunalS1467/DSA/tree/master/3321-type-of-triangle) |
 <!---LeetCode Topics End-->
