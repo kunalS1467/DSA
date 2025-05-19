@@ -24,6 +24,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0226-invert-binary-tree](https://github.com/kunalS1467/DSA/tree/master/0226-invert-binary-tree) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/kunalS1467/DSA/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/kunalS1467/DSA/tree/master/0543-diameter-of-binary-tree) |
+| [1207-delete-nodes-and-return-forest](https://github.com/kunalS1467/DSA/tree/master/1207-delete-nodes-and-return-forest) |
 ## Depth-First Search
 |  |
 | ------- |
@@ -31,6 +32,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0226-invert-binary-tree](https://github.com/kunalS1467/DSA/tree/master/0226-invert-binary-tree) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/kunalS1467/DSA/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/kunalS1467/DSA/tree/master/0543-diameter-of-binary-tree) |
+| [1207-delete-nodes-and-return-forest](https://github.com/kunalS1467/DSA/tree/master/1207-delete-nodes-and-return-forest) |
 ## Binary Tree
 |  |
 | ------- |
@@ -38,6 +40,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0226-invert-binary-tree](https://github.com/kunalS1467/DSA/tree/master/0226-invert-binary-tree) |
 | [0236-lowest-common-ancestor-of-a-binary-tree](https://github.com/kunalS1467/DSA/tree/master/0236-lowest-common-ancestor-of-a-binary-tree) |
 | [0543-diameter-of-binary-tree](https://github.com/kunalS1467/DSA/tree/master/0543-diameter-of-binary-tree) |
+| [1207-delete-nodes-and-return-forest](https://github.com/kunalS1467/DSA/tree/master/1207-delete-nodes-and-return-forest) |
 ## Breadth-First Search
 |  |
 | ------- |
@@ -45,6 +48,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Array
 |  |
 | ------- |
+| [1207-delete-nodes-and-return-forest](https://github.com/kunalS1467/DSA/tree/master/1207-delete-nodes-and-return-forest) |
 | [3321-type-of-triangle](https://github.com/kunalS1467/DSA/tree/master/3321-type-of-triangle) |
 ## Math
 |  |
@@ -54,4 +58,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [3321-type-of-triangle](https://github.com/kunalS1467/DSA/tree/master/3321-type-of-triangle) |
+## Hash Table
+|  |
+| ------- |
+| [1207-delete-nodes-and-return-forest](https://github.com/kunalS1467/DSA/tree/master/1207-delete-nodes-and-return-forest) |
 <!---LeetCode Topics End-->
