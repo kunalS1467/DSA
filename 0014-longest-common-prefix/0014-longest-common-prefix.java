@@ -1,21 +1,47 @@
+class TrieNode{
+    TrieNode[] a= new TrieNode[26];
+    int count = 0;
+    boolean isEndofWord;
+}
 class Solution {
+    TrieNode root;
+
     public String longestCommonPrefix(String[] strs) {
-        String prefix = strs[0];
-        for(int i=1;i<strs.length;i++){
-            String find = strs[i];
-            prefix = findCommon(prefix, find);
+        root = new TrieNode();
+        for(String str : strs){
+            insertTrieNode(str,root);
         }
-        return prefix;
-    }
-    public String findCommon(String prefix, String find){
-        int i=0;
-        for(;i<Math.min(prefix.length(),find.length());i++){
-            if(prefix.charAt(i)!=find.charAt(i)){
+        String res="";
+        while(true){
+            int count =0;
+            TrieNode next = null;
+            
+            if(root.isEndofWord)break;
+            char cd=' ';
+            for (int i = 0; i < 26; i++) {
+                if (root.a[i] != null) {
+                    count++;
+                    next = root.a[i];
+                    cd=(char)('a'+i);
+                }
+            }  
+            if (count != 1) {
                 break;
-            }
+               }
+               res+= cd;
+               root=next;
         }
-        
-        return i>0 ? prefix.substring(0,i):"";
+        return res;
     }
-    
+    public void insertTrieNode(String prefix, TrieNode root){
+        for(int i=0;i<prefix.length();i++){
+            int c= prefix.charAt(i)-'a';
+            if(root.a[c]==null){
+                root.a[c] = new TrieNode();
+                root.count+=1;
+            }
+            root =root.a[c];
+        }
+        root.isEndofWord = true;
+    }
 }
