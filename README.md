@@ -60,6 +60,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/kunalS1467/DSA/tree/master/0153-find-minimum-in-rotated-sorted-array) |
+| [0540-single-element-in-a-sorted-array](https://github.com/kunalS1467/DSA/tree/master/0540-single-element-in-a-sorted-array) |
 | [1207-delete-nodes-and-return-forest](https://github.com/kunalS1467/DSA/tree/master/1207-delete-nodes-and-return-forest) |
 | [3321-type-of-triangle](https://github.com/kunalS1467/DSA/tree/master/3321-type-of-triangle) |
 ## Math
@@ -96,4 +97,5 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 |  |
 | ------- |
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/kunalS1467/DSA/tree/master/0153-find-minimum-in-rotated-sorted-array) |
+| [0540-single-element-in-a-sorted-array](https://github.com/kunalS1467/DSA/tree/master/0540-single-element-in-a-sorted-array) |
 <!---LeetCode Topics End-->
