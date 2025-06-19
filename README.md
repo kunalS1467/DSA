@@ -63,6 +63,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0540-single-element-in-a-sorted-array](https://github.com/kunalS1467/DSA/tree/master/0540-single-element-in-a-sorted-array) |
 | [0907-koko-eating-bananas](https://github.com/kunalS1467/DSA/tree/master/0907-koko-eating-bananas) |
 | [1207-delete-nodes-and-return-forest](https://github.com/kunalS1467/DSA/tree/master/1207-delete-nodes-and-return-forest) |
+| [2387-partition-array-such-that-maximum-difference-is-k](https://github.com/kunalS1467/DSA/tree/master/2387-partition-array-such-that-maximum-difference-is-k) |
 | [3321-type-of-triangle](https://github.com/kunalS1467/DSA/tree/master/3321-type-of-triangle) |
 ## Math
 |  |
@@ -71,6 +72,7 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 ## Sorting
 |  |
 | ------- |
+| [2387-partition-array-such-that-maximum-difference-is-k](https://github.com/kunalS1467/DSA/tree/master/2387-partition-array-such-that-maximum-difference-is-k) |
 | [3321-type-of-triangle](https://github.com/kunalS1467/DSA/tree/master/3321-type-of-triangle) |
 ## Hash Table
 |  |
@@ -100,4 +102,8 @@ A collection of LeetCode questions to ace the coding interview! - Created using 
 | [0153-find-minimum-in-rotated-sorted-array](https://github.com/kunalS1467/DSA/tree/master/0153-find-minimum-in-rotated-sorted-array) |
 | [0540-single-element-in-a-sorted-array](https://github.com/kunalS1467/DSA/tree/master/0540-single-element-in-a-sorted-array) |
 | [0907-koko-eating-bananas](https://github.com/kunalS1467/DSA/tree/master/0907-koko-eating-bananas) |
+## Greedy
+|  |
+| ------- |
+| [2387-partition-array-such-that-maximum-difference-is-k](https://github.com/kunalS1467/DSA/tree/master/2387-partition-array-such-that-maximum-difference-is-k) |
 <!---LeetCode Topics End-->
